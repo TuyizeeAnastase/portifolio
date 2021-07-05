@@ -360,9 +360,9 @@ section .title::after{
     width: 70%;
  }
 
-/* teams section styling */
+/* teams sectioFn styling */
 .teams .title::after{
-    content: "who with me";
+    content: "works with me";
 }
 .teams .carousel .card{
     background: #222;
