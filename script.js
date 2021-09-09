@@ -59,3 +59,28 @@ $(document).ready(function(){
         }
     });
 });
+
+        function sendemail(){
+    var name=$('#Name').val();
+    var email=$('#email').val();
+    var subject=$('#Subject').val();
+    var message=$('#message').val();
+
+    var body='Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
+    Email.send({
+        SecureToken:'98472263-9fb7-4be0-8aa3-3a9bc6799b0a',
+        To: 'tuyizereanastase1gmail.com',
+        From:'tuyizereanastase1gmail.com',
+        Subject:'New message on contact us form',
+        Body: body
+    }).then(
+        message=>{
+            if(message == 'OK'){
+                alert(message)
+            }
+            else{
+                alert(message)
+            }
+        }
+    )
+}
